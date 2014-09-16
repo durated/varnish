@@ -28,7 +28,7 @@ when 'rhel', 'fedora'
     description "Varnish #{node['varnish']['version']} repo (#{node['platform_version']} - $basearch)"
     url "http://repo.varnish-cache.org/redhat/varnish-#{node['varnish']['version']}/el6/$basearch/"
     gpgcheck false
-    priority 5
+    priority "5"
     gpgkey 'http://repo.varnish-cache.org/debian/GPG-key.txt'
     action 'create'
   end
